@@ -1,0 +1,14 @@
+﻿  FREUtils.cpp
+  JoyOEMInfo.cpp
+  NativeJoystickDLL.cpp
+D:\NativeJoystick\extension\native\win64\NativeJoystickDLL.cpp(46,1): warning C4010: single-line comment contains line-continuation character
+D:\NativeJoystick\extension\native\win64\NativeJoystickDLL.cpp(47,1): warning C4010: single-line comment contains line-continuation character
+D:\NativeJoystick\extension\native\win64\NativeJoystickDLL.cpp(48,1): warning C4010: single-line comment contains line-continuation character
+D:\NativeJoystick\extension\native\win64\NativeJoystickDLL.cpp(49,1): warning C4010: single-line comment contains line-continuation character
+D:\NativeJoystick\extension\native\win64\NativeJoystickDLL.cpp(50,1): warning C4010: single-line comment contains line-continuation character
+     Creating library D:\NativeJoystick\extension\native\win64\Release\NativeJoystickDLL64.lib and object D:\NativeJoystick\extension\native\win64\Release\NativeJoystickDLL64.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 33 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  NativeJoystickDLL.vcxproj -> D:\NativeJoystick\extension\native\win64\Release\NativeJoystickDLL64.dll

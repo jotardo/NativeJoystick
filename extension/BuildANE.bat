@@ -36,10 +36,17 @@ set SIGNING_OPTIONS=
 :: First build the SWC
 call %FLEX_SDK%\bin\acompc -debug=false -source-path .\as3 -include-classes %ANE_CLASSES% -swf-version=%ANE_SWF_VERSION% -output .\lib\%ANE_NAME%.swc
 
+echo .
+pause
+
 :: Extract it (SWC is a zip) and copy library.swf, the definitions
 call unzip.bat .\lib\%ANE_NAME%.swc .\tmp
 copy .\tmp\library.swf .\lib
 copy .\native\win32\Release\NativeJoystickDLL.dll .\lib
+copy .\native\win64\x64\Release\NativeJoystickDLL64.dll .\lib
+
+echo .
+pause
 
 :: Make the ANE package
 ::adt -package <signing options> -target ane MyExtension.ane MyExt.xml -swc MyExtension.swc -platform Android-ARM -C platform/Android . -platform Windows-x86
@@ -48,9 +55,9 @@ copy .\native\win32\Release\NativeJoystickDLL.dll .\lib
 ::adt -package -target ane %ANE_NAME%.ane extension.xml -swc .\lib\%ANE_NAME%.swc -platform Windows-x86 -C lib library.swf
 
 
-call adt -package %SIGNING_OPTIONS% -target ane .\ane\%ANE_NAME%.ane extension.xml -swc .\lib\%ANE_NAME%.swc -platform Windows-x86 -C lib library.swf %ANE_DLL%
+call adt -package %SIGNING_OPTIONS% -target ane .\ane\%ANE_NAME%.ane extension.xml -swc .\lib\%ANE_NAME%.swc -platform Windows-x86 -C lib library.swf %ANE_DLL% -platform Windows-x86-64 -C lib library.swf %ANE_DLL_64%
+
 call unzip.bat .\ane\%ANE_NAME%.ane .\ane_unzipped\%ANE_NAME%.ane\
-echo.
 echo ***** Done building ANE: .\ane\%ANE_NAME%.ane *****
 
 goto end
@@ -60,3 +67,4 @@ goto end
 :: goto end
 
 :end
+pause

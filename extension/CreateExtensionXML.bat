@@ -16,5 +16,12 @@ echo 				^<initializer^>%ANE_NAME%ExtensionInitializer^</initializer^> >> %ANE_E
 echo 				^<finalizer^>%ANE_NAME%ExtensionFinalizer^</finalizer^> >> %ANE_EXT_XML%
 echo 			^</applicationDeployment^> >> %ANE_EXT_XML%
 echo 		^</platform^> >> %ANE_EXT_XML%
+echo 		^<platform name="Windows-x86-64"^> >> %ANE_EXT_XML%
+echo 			^<applicationDeployment^> >> %ANE_EXT_XML%
+echo 				^<nativeLibrary^>%ANE_DLL_64%^</nativeLibrary^> >> %ANE_EXT_XML%
+echo 				^<initializer^>%ANE_NAME%ExtensionInitializer^</initializer^> >> %ANE_EXT_XML%
+echo 				^<finalizer^>%ANE_NAME%ExtensionFinalizer^</finalizer^> >> %ANE_EXT_XML%
+echo 			^</applicationDeployment^> >> %ANE_EXT_XML%
+echo 		^</platform^> >> %ANE_EXT_XML%
 echo 	^</platforms^> >> %ANE_EXT_XML%
 echo ^</extension^> >> %ANE_EXT_XML%

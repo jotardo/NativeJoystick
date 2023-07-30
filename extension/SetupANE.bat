@@ -4,6 +4,7 @@
 set ANE_PACKAGE=com.iam2bam.ane.nativejoystick
 set ANE_NAME=NativeJoystick
 set ANE_DLL=NativeJoystickDLL.dll
+set ANE_DLL_64=NativeJoystickDLL64.dll
 set ANE_VERSION=1.0.0
 set ANE_SWF_VERSION=23
 set ANE_AIR_VERSION=4.0

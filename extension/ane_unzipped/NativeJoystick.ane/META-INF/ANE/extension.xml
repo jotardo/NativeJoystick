@@ -9,5 +9,12 @@
 				<finalizer>NativeJoystickExtensionFinalizer</finalizer> 
 			</applicationDeployment> 
 		</platform> 
+		<platform name="Windows-x86-64"> 
+			<applicationDeployment> 
+				<nativeLibrary>NativeJoystickDLL64.dll</nativeLibrary> 
+				<initializer>NativeJoystickExtensionInitializer</initializer> 
+				<finalizer>NativeJoystickExtensionFinalizer</finalizer> 
+			</applicationDeployment> 
+		</platform> 
 	</platforms> 
 </extension> 

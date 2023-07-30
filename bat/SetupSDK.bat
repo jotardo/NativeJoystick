@@ -1,7 +1,7 @@
 :user_configuration
 
 :: Path to Flex SDK
-set FLEX_SDK=C:\developing\SDK\flex_sdk_4.6__2014_02_26
+set FLEX_SDK=D:\FlexSDK
 
 
 :validation
